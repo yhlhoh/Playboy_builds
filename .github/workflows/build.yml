@@ -60,11 +60,11 @@ jobs:
       - name: Build Linux App
         run: flutter build linux
 
-      # - name: Upload Linux Build Artifacts
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: linux-build
-      #     path: build/linux/ 
+      - name: Upload Linux Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-build
+          path: build/linux/ 
 
   # build-macos:
   #   runs-on: macos-latest
